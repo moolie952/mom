@@ -1,0 +1,115 @@
+::-webkit-scrollbar { /* chrome based */
+    width: 0px; 
+    height: 0px;/* ширина scrollbar'a */
+    background: transparent;  /* опционально */}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+
+    
+    background-image: url(../mom/img/bgg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+width: 100%;
+    height: 100%;
+   
+}
+.blob{
+width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    left: 70%;
+    transform: scale(3);
+    overflow: hidden;
+    animation-name: blob;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes blob{
+    0%{
+    transform: scale(3);
+    }
+    100%{
+    transform: scale(0);
+        left: 1%;
+    }
+}
+.congr {
+width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    left: 25%;
+    transform: scale(1);
+    animation-name: congr;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes congr {
+    0%{
+    transform: scale(1);
+        left: 25%;
+    }
+    100%{
+    transform: scale(0);
+        left: -5%;
+    }
+}
+    .sss{
+    width: 50%;
+    height: 50%;
+        position: relative;
+        margin-top: -50%;
+        z-index: 2;
+        transform: scale(0.8);
+        left: -5%;
+    }
+.ss{
+ width: 50%;
+    height: 50%;
+        position: relative;
+        margin-top: -60%;
+        z-index: 2;
+        transform: scale(0.8);
+    left: 61%;
+}
+.cvet{
+width: 50%;
+    height: 50%;
+        position: relative;
+        margin-top: -65%;
+        z-index:1;
+        transform: scale(0.7);
+    left: 15%;
+}
+.surp{
+width: 50%;
+    height: 50%;
+        position: relative;
+        margin-top: -20%;
+        z-index:1;
+        transform: scale(0.7);
+    left: 33%;
+    opacity: 0;
+    animation-name: surp;
+    animation-duration: 1s;
+    animation-delay: 18s;
+    animation-fill-mode: forwards;
+}
+@keyframes surp{
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+
+}
+
